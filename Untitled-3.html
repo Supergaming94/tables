@@ -1,0 +1,125 @@
+<html>
+<head>
+    <title>Table</title>
+
+    <style>
+        /* table style */
+        table {
+            width: 1000px;
+            height: 500px;
+            border: 2px solid black;
+            font-weight: bold;
+            font-size: 20px;
+            border-collapse: separate;
+            margin: auto;
+        }
+
+        /* common cell style */
+        td {
+            padding: 20px;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        /* color classes */
+        .grey {
+            background-color: grey;
+            color: white;
+        }
+
+        .green {
+            background-color: green;
+            color: white;
+        }
+
+        .rgb-glow {
+    font-weight: bold;
+    font-size: 24px;
+    animation: glow 12s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        color: #1bac3d;
+        text-shadow: 0 0 5px #1bac3d;
+    }
+    30% {
+        color: #1255d3;
+        text-shadow: 0 0 10px #1255d3;
+    }
+    50% {
+        color: #ee0707;
+        text-shadow: 0 0 15px #ee0707;
+    }
+    100% {
+        color: #ede9fe;
+        text-shadow: 0 0 20px #ede9fe;
+    }
+}
+
+body {
+    background: linear-gradient(
+        270deg,
+        #1bac3d,
+        #1255d3,
+        #ee0707,
+        #ede9fe
+    );
+    background-size: 400% 400%;
+    animation: softRGB 12s ease infinite;
+}
+
+@keyframes softRGB {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+    </style>
+</head>
+
+<body>
+<table cellspacing="5">
+
+    <tr>
+        <td rowspan="8" class="grey rgb-glow">Helium</td>
+        <td rowspan="4" class="grey rgb-glow">Pentium</td>
+        <td rowspan="2" class="grey rgb-glow">Egy</td>
+        <td class="grey rgb-glow">Gribi</td>
+    </tr>
+
+    <tr>
+        <td class="green rgb-glow">Eola</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" class="green rgb-glow">Marlin</td>
+        <td class="grey rgb-glow">Raven</td>
+    </tr>
+
+    <tr>
+        <td class="green rgb-glow">Magi</td>
+    </tr>
+
+    <tr>
+        <td rowspan="4" class="green rgb-glow">Hira</td>
+        <td rowspan="2" class="grey rgb-glow">Rick</td>
+        <td class="grey rgb-glow">Arsian</td>
+    </tr>
+
+    <tr>
+        <td class="green rgb-glow">Dona</td>
+    </tr>
+
+    <tr>
+        <td rowspan="2" class="green rgb-glow">Hona</td>
+        <td class="grey rgb-glow">Henry</td>
+    </tr>
+
+    <tr>
+        <td class="green rgb-glow">Herta</td>
+    </tr>
+
+</table>
+</body>
+</html>
